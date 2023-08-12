@@ -1,0 +1,46 @@
+#intro{
+    margin-left: 40px;
+    gap:10px;
+}
+
+h2{
+    color: #005889;
+}
+
+#border{
+    border-right: 50px;
+}
+
+#color{
+    color: #005889;
+}
+
+
+.column{
+    width: 30%;
+    float: left;
+}
+
+#max{
+    max-width: max-content;
+}
+
+.display{
+    display: flex;
+}
+
+.margin0{
+    margin: 0%;
+}
+
+#top{
+    margin-top: 10px;
+}
+
+.flex{
+    flex-direction: row;
+}
+
+div + div {
+    margin-left: 40px;
+}
