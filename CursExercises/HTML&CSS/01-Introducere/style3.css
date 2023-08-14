@@ -1,0 +1,53 @@
+div {
+    width: 500px;
+    height: 500px;
+  
+    background: #333333;
+  }
+  
+  #main {
+    color: white;
+    width: 750px;
+  }
+  
+  .text-white {
+    color: white;
+  }
+  
+  .alert {
+    height: 350px;
+    color: gray;
+  }
+  
+  div {
+    background: blue;
+  }
+  
+  .alert-warning {
+    background: #000000;
+    color: yellow;
+  }
+
+  .mybutton{
+    background-color: green; /*seteam culoare butonului*/
+    color: white; /*setam culoare textului din interiorul butonuluis*/
+   /* padding: 10px; setam distanta dintre margina butonului si textul din interior*/
+                    /*obesrvam ca mutonul nostru a devenit mai mare*/
+   /* padding: 10px 30px; asa am adugat 10px pe verticala si 30px pe orizontala*/
+   padding: 70px 50px 20px 2px  /*sus , drapta , jos , stanga  */;
+    border: 1px solid red; /*am adaugat o margine la butonul nostru si am setat si culoare sa fie rasie  */
+    /* margin: 20px; !!!ATENTIE !!!!
+                              distanta se adauga si pe vertical si pe orizolnat */
+    margin: 10px 20px 10px 20px; 
+    outline-style:solid;
+    outline-width: 5px;
+    outline-color: red;
+  }
+
+
+
+
+
+
+
+

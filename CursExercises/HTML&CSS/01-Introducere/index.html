@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+
+<head>
+    <meta charset="UTF-8"> <!-- caractere folosite actual-->
+    <meta name="viewport" content="width=device-width"> <!--cat spatiu disponibil avem pe ecran -->
+    <title>Introducere</title> <!--Titlu aparut sus pe tag -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <ul>
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Contacts</li>
+        <li><a href="index2.html">Intraducere in CSS</a> </li><!--adaugare unei noi pagini html-->
+        <li><a href="index3.html">Sarcina suplimentara</a> </li>
+        <li><a href="table.html">Table</a></li>
+        <li><a href="display.html">Display</a></li>
+        <li><a href="grid.html">Grid Layout</a></li>
+    </ul>
+
+    <h1>Titlu</h1> <!--Titlu important , h1 pana la h6 -->
+    <h2>Titlu</h2>
+    <h3>Titlu</h3>
+    <h4>Titlu</h4>
+    <h5>Titlu</h5>
+    <h6>Titlu</h6>
+
+    <p id="paragraf1">Acesta este un paragraf </p> <!--element tip block, ocupa taoata latimea paginii-->
+
+    <!--Daca vrem ca o sectiune de text sa fie accentuat:-->
+    <p id="paragraf2"><strong>Acesta</strong> este un paragraf</p>
+
+    <hr> <!--Adauga o linie orizontala-->
+
+    <!--Daca vrem ca o sectiune de text sa fie cursiv:-->
+    <p><i>Acesta</i> este un paragraf</p>
+    <p><em>Acesta</em> este un paragraf</p>
+
+    <!--Daca vrem ca o sectiune de text sa fie taiat:-->
+    <!-- <br> = pune in randu urmator  -->
+    <p><s>Acesta</s> este <br> un paragraf</p>
+    <p><del>Acesta</del> este un paragraf</p>
+
+
+    <!--Daca vrem ca o sectiune de text sa fie markat cu highlighter-->
+    <p><mark>Acesta</mark> este un paragraf</p>
+
+    <!--Daca vrem ca o sectiune de text sa fie nota de subsol -->
+    <p><sub>Acesta</sub> este un paragraf</p>
+
+    <!--Daca vrem ca o sectiune de text sa fie pus in ghilimele-->
+    <p><q>Acesta</q> este un paragraf</p>
+
+    <pre>
+        My Bonnie lies over the ocean.
+
+        My Bonnie lies over the sea.
+      
+        My Bonnie lies over the ocean.
+      
+        Oh, bring back my Bonnie to me. 
+
+    </pre>
+
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        Acesta este ceva.
+    </blockquote>
+
+    <!--Daca vrei ca o sectiune de text sa fie scris de la dreapta la stanga-->
+    <bdo dir="rtl">Este ceva?</bdo>
+
+    <!--Ddaca vrem sa dam un titlu pentru paragraful nostru-->
+    <p><abbr title="Salut">Ceva </abbr>Acesta este un paragraf mai lung.</p>
+
+    <ul>
+        <li>
+            <!--Link-->
+            <a href="https://skillbrain.com/">Go To Skillbrain</a>
+        </li>
+
+        <li>
+            <!--pentru a scoate sublinierea linkului:-->
+            <a href="https://skillbrain.com/" style="text-decoration: none;">Go To Skillbrain</a>
+        </li>
+
+        <li>
+            <!--se deschide linkul într-o fereastra noua-->
+            <a href="https://skillbrain.com/" target="_blank">Go To Skillbrain</a>
+        </li>
+
+        <li>
+            <a hfer="https://skillbrain.com/"><img width="50" src="Smiley.svg.png"></a>
+        </li>
+
+        <li>
+            <a hfer="https://skillbrain.com/" title="Skillbrain">Back To Skillbrain</a>
+        </li>
+
+    </ul>
+
+    <!--Images-->
+    <img width="40" src="Smiley.svg.png">
+
+    <!--aranjare pe pagina in asa fel ca poza sa fie pe partea drapta a ecranului-->
+    <p>
+        <img width="70" src="Smiley.svg.png" style="float: right;">
+        This is a paragraph.
+        This paragraph contains an image
+    </p>
+
+    <!---->
+    <img width="70" src="Smiley.svg.png" alt="Smiley">
+
+
+    <!--Lista-->
+
+    <!--Lista neordonata-->
+    <ul style="list-style-type:square;">
+        <li>Item one</li>
+        <li>Item two</li>
+        <li>Item three</li>
+        <li>Item four</li>
+        <li>Item five</li>
+        <li>Item six</li>
+    </ul>
+
+    <!--Lista ordonata-->
+    <ol>
+        <li>Item one</li>
+        <li>Item two</li>
+        <li>Item three</li>
+        <li>Item four</li>
+        <li>Item five</li>
+        <li>Item six</li>
+    </ol>
+
+    <!--Lista simpla , dd=pune un tab -->
+    <dl>
+        <dt>Item one</dt>
+        <dd>Item two</dd>
+        <dt>Item three</dt>
+    </dl>
+
+    <!--Tabele-->
+
+    <table border="1" cellSpacing="10" , cellPadding="10">
+        <!--definim de unde incepe tabelul , 
+            + cu ajutorul borderului putem adauga marginea la tabelul nostru
+        cellSpacing="10" = spatiu dintre celule
+         cellPadding="10" = spatiu in interiorul celulei
+        -->
+        <tr> <!--definim un rand din tabel-->
+            <th>Nume</th> <!--nume de coloane-->
+            <th>Prenume</th>
+            <th>Salariu</th>
+        </tr>
+        <tr>
+            <td>Pop</td>
+            <td>David</td>
+            <td>2000</td>
+        </tr>
+        <tr>
+            <td>Ionescu</td>
+            <td>Maria</td>
+            <td>3500</td>
+        </tr>
+
+        <tr>
+            <td>Tudor</td>
+            <td>Marin</td>
+            <td>7500</td>
+        </tr>
+
+    </table> <!--definim unde se termina tabelul-->
+
+    <br> <!--pune un rand liber-->
+    <br>
+
+
+    <table border="1" cellSpacing="10" , cellPadding="10" , style="width:800px;">
+        <!--style="width:800px =  cat de mare sa fie tabelul -->
+
+        <caption>Name</caption> <!--da un nume la tabel-->
+        <tr>
+            <th colspan="2">Nume Prenume</th> <!--pentru a unii si la urmatorul rand celulele -->
+            <th rowspan="2"> Salariu</th> <!--pentru a marii cu 2 celule in jos -->
+        </tr>
+        <tr>
+            <td>Pop</td>
+            <td>David</td>
+
+        </tr>
+        <tr>
+            <td>Ionescu</td>
+            <td>Maria</td>
+            <td>3500</td>
+        </tr>
+
+        <tr>
+            <td>Tudor</td>
+            <td>Marin</td>
+            <td>7500</td>
+        </tr>
+
+    </table> <!--definim unde se termina tabelul-->
+
+    <br>
+    <br>
+
+    <!--Forms-->
+
+    <form>
+        <label for="fname">First Name</label> <br />
+        <input type="text" , id="fname"><br />
+
+        <label for="lname">Last Name</label> <br />
+        <input type="text" , id="lname"><br />
+
+        <label for="pass">Password</label> <br />
+        <input type="password" , id="pass"><br />
+
+        <label for="gender">Gender:</label> <br />
+        <label for="genderm">Male:</label> <br />
+        <input type="radio" , id="genderm" , value="male" name="gender"><br />
+        <label for="genderf">Famale:</label> <br />
+        <input type="radio" , id="genderf" , value="famale" name="gender"><br />
+        <!--Obesrvatie!! cu ajutorul atributului name="gender" 
+        putem sa selectam doar o optiune -->
+
+        <label for="gender">Options:</label> <br />
+        <label for="option1">A:</label> <br />
+        <input type="checkbox" , id="optiona" , value="a"><br />
+        <label for="optionb">B:</label> <br />
+        <input type="checkbox" , id="optionb" , value="b"><br>
+
+        <br />
+        <input type="number" min="1" max="5"><br />
+        <!--Doar numerele intre 1 si 5 poate fii selectat-->
+
+        <br />
+        <input type="text" placeholder="Your name here"> <br>
+        <!--textbox in care scrie ce trebuie sa scrii-->
+
+        <br>
+        <input type="text" disabled> <br>
+        <!--textbox in care nu poti sa scrii-->
+
+        <br>
+        <input type="text" maxlength="3"> <br>
+        <!--textbox in care nu poti sa scrii mai mult de 3litere-->
+
+        <br>
+        <input type="text" readonly> <br>
+        <!--Set the input field to be read only (meaning that the value cannot be changed).-->
+
+        <br>
+        <input type="button" value="Register">
+
+        <p id="demo.">Hi</p>
+        <script>document.getElementById("demo").innerHTML = "Hello World"</script>
+        <!--scimba contentul din script la ce crie in p-->
+
+        <p>Code example:<code>var person;</code></p>
+        <!---->
+
+
+    </form>
+
+
+
+
+</body>
+
+
+
+
+</html>
