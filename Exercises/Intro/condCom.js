@@ -63,5 +63,3 @@ let calculateResellPrice = (originalPrice, age) => {
 }
 
 let result4 = calculateResellPrice(1000, 15);
-
-forc,c
