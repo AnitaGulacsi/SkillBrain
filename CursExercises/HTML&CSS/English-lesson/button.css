@@ -1,0 +1,59 @@
+#uber-button {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-weight: 550;
+}
+
+#amazon-button {
+    width: 150px;
+    height: 30px;
+    background-color: rgb(255, 216, 20);
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    border-radius: 20px;
+}
+
+#git-hub-button {
+    width: 95px;
+    height: 40px;
+    background-color: rgb(46, 164, 79);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.bootstrap-button {
+    width: 130px;
+    height: 40px;
+    background-color: rgb(121, 82, 179);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+#secondary-bootstrap-button {
+    border: 1px solid rgb(108 , 117 , 125);
+    background-color: rgb(255, 255, 255);
+    color: rgb(108 , 117 , 125);
+}
+
+#linkedin-button {
+    width: 230px;
+    height: 50px;
+    background-color: rgb(10 ,  102 , 194);
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+}
+
+#secondary-linkedin-button {
+    width: 91px;
+    height: 42px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(10 ,  102 , 194);
+    font-weight: 600;
+    border: 1px solid rgb(10 ,  102 , 194);
+    border-radius: 22px;
+}

@@ -1,0 +1,293 @@
+*{
+    margin:0;
+    padding: 0%;
+    color: rgb(45, 22, 5);
+}
+
+.answers {
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 400;
+    background-color: green;
+    color: white;
+    border: none;
+    width: 300px;
+    padding: 10px; 
+    cursor: no-drop;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 5px
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    margin: 2%;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 224);;
+}
+
+.section-title {
+    display: flex;
+    justify-content: center;
+    padding:  10px;
+}
+
+.exercises .two-column{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.exercises .two-column .coll-left {
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6%;
+    gap: 20px;
+}
+
+.exercises .two-column .coll-left input {
+    margin-top: 10px;
+    height: 50px;
+    color: red;
+    font-size: 16px;
+    padding-left: 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+.exercises .two-column .coll-left input:focus {
+    outline: none;
+}
+
+.exercises .two-column .coll-left .primary-button {
+    background-color: green;
+    color: white;
+    border-radius: 30px;
+    font-size: 15px;
+    width: 70px;
+    height: 40px;
+    margin-top: 10px;
+    border:none;    
+    cursor: -moz-grabbing;
+}
+
+.exercises .two-column .coll-left .primary-button:hover {
+    background-color: rgba(29, 176, 13, 0.527);
+    transition-duration: 1s;
+}
+
+.exercises .two-column .coll-left span {
+    background: linear-gradient(82deg, rgba(213, 51, 140, 1) 0%, rgba(199, 18, 69, 1) 37%, rgba(29, 2, 10, 1) 79%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.exercises .two-column .coll-left div p:first-child{
+    color: rgb(31, 167, 0)
+}
+
+.exercises .two-column .coll-left a {
+    text-decoration-line: none;
+    color: red;
+    margin-top: 10px;
+    padding-left: 30px;
+}
+
+.exercises .two-column .coll-left .challenge div {
+    width: 300px;
+    border: 1px solid green;
+    background-color: white;
+}
+
+.exercises .two-column .coll-left .challenge  a {
+    color: green;
+    text-decoration: underline;
+}
+
+.exercises:nth-of-type(2) .two-column .coll-left .challenge a {
+    color: rgb(0, 113, 133);
+    text-decoration: underline;
+}
+
+.exercises:nth-of-type(2) .two-column .coll-left .challenge > div > p:nth-child(2) {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+
+.exercises:nth-of-type(2) .two-column .coll-left .challenge > div > p:nth-child(3) {
+    color: rgb(0 , 118 , 0);
+}
+
+.exercises:nth-of-type(2) .two-column .coll-left .challenge > div:nth-child(2) {
+    border: none;
+    background-color: transparent;
+    width: 345px;
+}
+
+.exercises:nth-of-type(2) .two-column .coll-left .challenge > div:nth-child(2) p {
+    color: rgb(31, 167, 0);
+    font-size: 20px;
+}
+
+.exercises:nth-of-type(2) .two-column .coll-left .challenge > div > div {
+    border: none;
+    gap: 10px;
+}
+
+.exercises:nth-of-type(2) .two-column .coll-left .challenge > div > div > button {
+    width: 126px;
+    height: 35px;
+    border: none;
+    border-radius: 35px;
+    color: black;
+    margin: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.exercises:nth-of-type(2) .two-column .coll-left .challenge > div > div > button:nth-child(1) {
+    background-color: rgb(255, 216, 20);
+}
+
+.exercises:nth-of-type(2) .two-column .coll-left .challenge > div > div > button:nth-child(2) {
+    background-color: rgb(255, 164, 28);
+}
+
+.exercises:nth-of-type(3) .two-column .coll-left .image-corner-rounded {
+    width: 200px;
+    border-radius: 30px;
+}
+
+.exercises .two-column .coll-left .button-box {
+    width: 300px;
+    height: 90px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.exercises .two-column .coll-left .helpers p {
+    color: rgb(31, 167, 0)
+}
+
+.exercises .two-column .coll-left .button-box button {
+    border: none;
+}
+
+.exercises .two-column .coll-left .image-square {
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    object-fit: contain;
+    object-position: center;
+}
+
+.exercises .two-column .coll-left .image-circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+}
+
+.exercises:nth-of-type(3) .two-column .coll-left div:nth-child(4) div > input {
+    width: 200px;
+    color: grey;
+    border-radius: 10px;
+    padding-left: 20px;
+    border: 1px solid gray;
+}
+
+.exercises:nth-of-type(3) .two-column .coll-left div:nth-child(5) div > input {
+    width: 500px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.exercises:nth-of-type(3) .two-column .coll-left div:nth-child(6) > div p {
+    color:  grey;
+}
+
+.exercises:nth-of-type(3) .two-column .coll-left div:nth-child(6) > div input {
+    border: 1px solid black;
+    color: grey;
+    margin-left: 20px;
+    width: 200px;
+    height: 30px;
+    border-radius: 0px;
+}
+
+.exercises:nth-of-type(3) .two-column .coll-left div:nth-child(6) > div input:focus {
+    outline: auto;
+}
+
+.exercises:nth-of-type(3) .two-column .coll-left div:nth-child(6) > div button {
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: blue;
+    font-size: 16px;
+    color: white;
+    border: none;
+}
+
+.exercises .two-column .blue-box {
+    width: 200px;
+    height: 50px;
+    background-color: aqua;
+}
+
+.exercises .two-column .blue-box p , .exercises .two-column .pink-box p {
+    justify-content: center;
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+.exercises .two-column .pink-box {
+    width: 75px;
+    height: 50px;
+    background-color: pink;
+}
+
+.exercises .two-column .coll-right {
+    margin: 16px;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6%;
+    gap: 20px;
+    border: 3px solid red;
+    background-color: white;
+}
+
+.exercises .two-column .coll-right p {
+    color: rgb(31, 167, 0)
+}
+
+.exercises .two-column .coll-right code {
+    color: red;
+    font-size: 17px;
+    padding-left: 15px;
+}
+
+
+
+
+
