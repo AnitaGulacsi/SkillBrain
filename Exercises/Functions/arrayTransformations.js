@@ -105,12 +105,7 @@ console.log(perfectlyOrdered([10, 1, 5, 3, 2, 8, 7]));
 // Elyse wants to change the order of the cards in the deck. After the trick, 
 // the card that is currently at the top should end up at the bottom of the deck. The second card should end up second last etc.
 
-let reorder = (deck) => {
-    let newDeck = [];
-    for (let i = 0; i < deck.length+4; i++) {
-        newDeck.push(deck.pop());
-    }
-    return newDeck;
-};
+let reorder = (deck) => (deck = deck.reverse())
 
-console.log(reorder([10 , 1 , 5 , 3 , 2]));  // fix the bug 
+console.log(reorder([10 , 1 , 5 , 3 , 2]));
+
