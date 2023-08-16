@@ -1,22 +1,7 @@
-@media (max-width: 768px)  {
-    .advice-slip .text-box {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 341px;
-        height: 353px;
-    }
-
-    .advice-slip .text-box .horizontal-lines .line-left, .advice-slip .text-box .horizontal-lines .line-right {
-        width: 136px;
-    }
-
-    .advice-slip .text-box .horizontal-lines {
-        margin-top: 250px;
-    }
-
-    .advice-slip .text-box .dice {
-        margin-top: 348px;
+@media (max-width: 500px)  {
+    .joke-tailer-container .button-container #btn-primary {
+        width: 180px;
+        height: 55px;
+        font-size: 18px;
     }
 }

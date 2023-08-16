@@ -1,5 +1,5 @@
 body {
-    background-color: #202630;
+    background-color: #45badd;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -7,99 +7,118 @@ body {
     min-height: 100vh;
 }
 
-.advice-slip {
+* {
+    padding: 0;
+}
+
+
+.moving-image-up {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+}
+
+
+.moving-image-down {
+    position: fixed;
+    overflow: hidden;
+    bottom: 0;
+}
+
+.moving-image-down .appeared-robot ,.moving-image-up .appeared-robot {
+    display: flex;
+    flex-direction: row;
+    /* margin: 20px; */
+    overflow: hidden;
+}
+
+.moving-image-down .appeared-robot .appeared , .moving-image-up .appeared-robot .appeared{
+    position: relative;
+    overflow: hidden;
+    width: max-content;
+    margin: 0;
+    height: 150px;
+    padding: 5px;
+    display: none;
+    transform: translateY(10%);
+}
+
+.moving-image-down .appeared-robot .appeared {
+    animation: leftAnimation 7s linear infinite alternate;
+}
+
+.moving-image-up .appeared-robot .appeared {
+    animation: rightAnimation 7s linear infinite alternate;
+}
+
+@keyframes leftAnimation {
+    0%, 100% {
+        left: 100%;
+    }
+    50% {
+        left: -10vw;
+    }
+}
+
+@keyframes rightAnimation {
+    0%, 100% {
+        right: 100%;
+    }
+    50% {
+        right: -10vw;
+    }
+}
+
+.joke-tailer-container .button-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.advice-slip .text-box {
+.joke-tailer-container .button-container #btn-primary {
+    width: 293px;
+    height: 75px;
+   
+    background-color: #FF3282;
+    border-radius: 5px;
+    border: none;;
+    box-shadow: -20px 20px 20px 12px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    
+    font-size: 32px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: azure;
+}
+
+.joke-tailer-container .button-container #btn-primary:hover {
+   opacity: 0.9;
+}
+
+.joke-tailer-container .joke-text-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    width: 540px ;
-    height: 335px ;
-    border-radius: 20px ;
-    background-color: #373f4dcb;
-    color: #D9D9D9;
 }
 
-.advice-slip .text-box .title {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: #53FFAB;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 19px;
-    letter-spacing: 0.14em;    
+.joke-tailer-container .joke-text-container #joke-text {
+    margin: 60px 0 20px 0;
+    padding : 0 70px;
+    font-size: 20px;
+    color: black;
+
 }
 
-.advice-slip .text-box #text-change {
+.joke-tailer-container .media-container {
     display: flex;
     justify-content: center;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
-    font-weight: 200;
-    line-height: 38px;
-    letter-spacing: 0em;
-    margin-bottom: 20px;
-    padding: 15px;
+    align-items: center;
 }
 
-.advice-slip .text-box .horizontal-lines {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    position: absolute;
-    margin-top: 221px;
+.joke-tailer-container .media-container #gif {
+    max-width: 100%;    
 }
 
-.advice-slip .text-box .horizontal-lines .line-left, .advice-slip .text-box .horizontal-lines .line-right {
-    border: 1px solid white;
-    background-color: white;
-    opacity: 0.3;
-    width: 200px;
-    height: 0px;
-    margin: 7px;
+.joke-tailer-container .media-container #img {
+    max-width: 100%;   
 }
-
-.advice-slip .text-box .horizontal-lines .breakpoint-lines {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.advice-slip .text-box .horizontal-lines .breakpoint-lines .breakpoint-lines-left ,.advice-slip .text-box .horizontal-lines .breakpoint-lines .breakpoint-lines-right {
-    border: 1px solid white;
-    margin: 2px;
-    width: 1px;
-    height: 11px;
-    border-radius: 10px;
-    background: white;
-}
-
-
-.advice-slip .text-box .dice {
-    position: absolute;
-    margin-top: 336px;
-}
-
-.advice-slip .text-box .dice .button-dice{
-    background-color: #53FFAB;
-    width: 50px;
-    height: 50px;
-    border-radius: 100px;
-    border: none;
-    cursor: pointer;
-}
-
-.advice-slip .text-box .dice .button-dice:hover {
-    background-color: #53FFAB;
-    opacity: 0.7;
-}
-

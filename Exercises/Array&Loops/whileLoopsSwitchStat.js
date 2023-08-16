@@ -10,7 +10,21 @@
 //     'All or Nothing' takes 5 minutes.For all other drinks(e.g., special offers) you can assume a preparation time of 2.5 minutes.
 // To help your friend, write a function timeToMixJuice that takes a juice from the menu as an argument and returns the number of minutes it takes to mix that drink.
 
+const timeToMixJuice = (juiceName) => {
+    if (juiceName === "Pure Strawberry Joy") {
+      return 0.5;
+    } else if (juiceName === "Energizer" || juiceName === "Green Garden") {
+        return 1.5;
+    } else if (juiceName === "Tropical Island") {
+        return 3;
+    } else if (juiceName === "All or Nothing"){
+        return 5;
+    }else {
+        return 2.5;
+    }
+};
 
+// console.log(timeToMixJuice("Tropical Island") + " minutes");
 
 // 2. Replenish the lime wedge supply
 // A lot of Li Mei's creations include lime wedges, either as an ingredient or as part of the decoration.
@@ -22,7 +36,7 @@
 // She keeps going until she reached the number of wedges that she needs or until she runs out of limes.
 // Li Mei would like to know in advance how many limes she needs to cut. The limesToCut function should return the number of limes to cut.
 
-
+// don't understand the exercises
 
 // 3. Finish up the shift
 // Li Mei always works until 3pm.Then her employee Dmitry takes over.There are often drinks that have been ordered but
@@ -33,3 +47,10 @@
 // The time left in the shift will always be greater than 0. Furthermore, the orders are prepared in the order in which they appear in the array.
 // If Li Mei starts to mix a certain juice, she will always finish it even if she has to work a bit longer.
 // If there are no remaining orders left that Dmitry needs to take care of, an empty array should be returned.
+
+const remainingOrders = (minutesLeft , orders) => {
+
+};
+
+console.log(remainingOrders(5, ['Energizer', 'All or Nothing', 'Green Garden']));
+

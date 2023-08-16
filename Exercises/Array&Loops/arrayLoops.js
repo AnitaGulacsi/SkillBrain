@@ -50,3 +50,20 @@ const determinatedOddEvenCards = (array, boolean) => {
 console.log(determinatedOddEvenCards([1, 2, 3, 1, 5, 6], true));
 
 //question ? how can i solve with for...of ? 
+
+ const determineOddEvenCardsForOf = (deck,booleanValue) => {
+    let counter = 0;
+    for (const card of deck) {
+      if (booleanValue === true && card % 2 == 0 ) {
+        counter += 1
+      }
+      else if (booleanValue === false && card % 2 !== 0 ){
+        counter += 1
+      }
+    } 
+    console.log(counter)
+  }
+  
+ console.log(determineOddEvenCardsForOf([1, 2, 3, 1, 5, 6], true));
+  
+console.log(determineOddEvenCardsForOf([1, 2, 3, 1, 5, 6], false));

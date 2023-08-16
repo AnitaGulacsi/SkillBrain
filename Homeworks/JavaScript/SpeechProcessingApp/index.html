@@ -6,37 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="responsible.css">
-    <title>Advice Slip</title>
+    <title>Joke Tailer</title>
 </head>
 
 <body >
 
-    <section class="advice-slip">
-            <div class="text-box">
-                <div class="title">
-                    <h4>ADVICE #<span id="title-number">number</span></h4>
-                </div>
-
-                <div id="text-change">
-                    <p>Here ist the text</p>
-                </div>
-
-                <div class="horizontal-lines">
-                    <div class="line-left"></div>
-                    <div class="breakpoint-lines">
-                        <div class="breakpoint-lines-left"></div>
-                        <div class="breakpoint-lines-right"></div>
-                    </div>
-                    <div class="line-right"></div>
-                </div>
-
-                <div class="dice">
-                    <button id="btn-dice" class="button-dice"><img src="public/images/dice.svg" alt="image"></button>
-                </div>
+    <section class="moving-image-up">
+            <div class="appeared-robot"> 
+                <img class="appeared" src="public/images/robot.png" alt="robot">
+                <img class="appeared" src="public/images/robot.png" alt="robot">
+                <img class="appeared" src="public/images/robot.png" alt="robot">
+                <img class="appeared" src="public/images/robot.png" alt="robot"> 
             </div>
-
-            <script src="index.js"></script>
     </section>
-    
+
+    <section class="joke-tailer-container">
+        <div class="button-container">
+            <button id="btn-primary">Tell me a joke!</button>
+        </div>
+
+        <div class="joke-text-container">
+            <p id="joke-text">I tell you a joke</p>
+        </div> 
+
+        <div class="media-container">
+            <img id="gif" src="public/images/robotMove.gif" alt="robot.gif">
+            <img id="image" src="public/images/robot.png" alt="robot.img"> 
+          <!-- if the gif is not supported to browser i want to appeared the image   -->
+        </div>
+
+
+    </section>
+
+    <section class="moving-image-down">
+            <div class="appeared-robot"> 
+                <img class="appeared" src="public/images/robot.png" alt="robot">
+                <img class="appeared" src="public/images/robot.png" alt="robot">
+                <img class="appeared" src="public/images/robot.png" alt="robot">
+                <img class="appeared" src="public/images/robot.png" alt="robot"> 
+             </div>
+    </section>
+
+    <script src="index.js" ></script>
 </body>
 </html>
