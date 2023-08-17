@@ -1,0 +1,124 @@
+body {
+    background-color: #45badd;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+* {
+    padding: 0;
+}
+
+
+.moving-image-up {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+}
+
+
+.moving-image-down {
+    position: fixed;
+    overflow: hidden;
+    bottom: 0;
+}
+
+.moving-image-down .appeared-robot ,.moving-image-up .appeared-robot {
+    display: flex;
+    flex-direction: row;
+    /* margin: 20px; */
+    overflow: hidden;
+}
+
+.moving-image-down .appeared-robot .appeared , .moving-image-up .appeared-robot .appeared{
+    position: relative;
+    overflow: hidden;
+    width: max-content;
+    margin: 0;
+    height: 150px;
+    padding: 5px;
+    display: none;
+    transform: translateY(10%);
+}
+
+.moving-image-down .appeared-robot .appeared {
+    animation: leftAnimation 7s linear infinite alternate;
+}
+
+.moving-image-up .appeared-robot .appeared {
+    animation: rightAnimation 7s linear infinite alternate;
+}
+
+@keyframes leftAnimation {
+    0%, 100% {
+        left: 100%;
+    }
+    50% {
+        left: -10vw;
+    }
+}
+
+@keyframes rightAnimation {
+    0%, 100% {
+        right: 100%;
+    }
+    50% {
+        right: -10vw;
+    }
+}
+
+.joke-tailer-container .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.joke-tailer-container .button-container #btn-primary {
+    width: 293px;
+    height: 75px;
+   
+    background-color: #FF3282;
+    border-radius: 5px;
+    border: none;;
+    box-shadow: -20px 20px 20px 12px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    
+    font-size: 32px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: azure;
+}
+
+.joke-tailer-container .button-container #btn-primary:hover {
+   opacity: 0.9;
+}
+
+.joke-tailer-container .joke-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.joke-tailer-container .joke-text-container #joke-text {
+    margin: 60px 0 20px 0;
+    padding : 0 70px;
+    font-size: 20px;
+    color: black;
+
+}
+
+.joke-tailer-container .media-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.joke-tailer-container .media-container #gif {
+    max-width: 100%;    
+}
+
+.joke-tailer-container .media-container #img {
+    max-width: 100%;   
+}

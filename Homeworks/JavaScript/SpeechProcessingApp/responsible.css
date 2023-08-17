@@ -1,0 +1,7 @@
+@media (max-width: 500px)  {
+    .joke-tailer-container .button-container #btn-primary {
+        width: 180px;
+        height: 55px;
+        font-size: 18px;
+    }
+}
