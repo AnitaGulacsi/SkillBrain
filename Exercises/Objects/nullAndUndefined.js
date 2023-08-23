@@ -5,6 +5,7 @@
 // function for revoking a ticket. In tasks 3 and 4, you will work on the ticket tracking system that helps to prevent forgery. 
 // Lastly, you will help adapt the system to new legal requirements.
 
+
 // 1. Create a new visitor
 // When visitors come to the amusement park for the first time, they need to register by entering their name and age 
 //in a terminal and agreeing to the terms and conditions. Of course, they also need to buy a ticket. Each ticket has an identifier like H32AZ123.
@@ -30,6 +31,7 @@ let revokeTicket = (visitor) => {
     visitor.ticketId = null ; 
     return visitor;
 };
+
 
 const visitor = {
     name: 'Verena Nardi',

@@ -4,6 +4,7 @@
 // You have three tasks, one to determine if you will need to get a licence,
 // one to help you choose between two vehicles and one to estimate the acceptable price for a used vehicle.
 
+
 // 1. Determine if you will need a drivers licence
 // Some kinds of vehicles require a drivers license to operate them. Assume only the kinds
 // 'car' and 'truck' require a license, everything else can be operated without a license.

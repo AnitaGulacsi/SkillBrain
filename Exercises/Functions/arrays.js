@@ -4,11 +4,11 @@
 // The position of a certain card corresponds to the index in the array. 
 // That means position 0 refers to the first card, position 1 to the second card etc.
 
+
 // 1. Retrieve a card from a stack
 // To pick a card, return the card at index position from the given stack.
 
 let getItem = (array , position) => array[position] ;
-    
 console.log(getItem([1,2,4,1] , 2));
 
 // 2. Exchange a card in the stack

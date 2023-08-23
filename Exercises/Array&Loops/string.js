@@ -38,6 +38,7 @@ let frontDoorResponse = (sentences) => {
     return password;
 };
 
+
 let sentences = ("Stands so high/Huge hooves too/Impatiently waits for/Reins and harness/Eager to leave");
 console.log(frontDoorResponse(sentences));
 

@@ -3,6 +3,7 @@
 // As a budding magician, Elyse needs to analyze her deck in lots of different ways. 
 // To keep things simple, she only uses cards with values 1 - 10.
 
+
 // 1. Determine how many cards of a certain type are in the deck
 // Elyse wants to know how many cards of a particular type she has in her deck.
 // Write a function cardTypeCheck that takes two parameters: an array of cards(Elyse's deck) and the type of card to count. 
@@ -44,7 +45,6 @@ const determinatedOddEvenCards = (array, boolean) => {
     } else {
         return oddNumbers.length;
     }
-
 };
 
 console.log(determinatedOddEvenCards([1, 2, 3, 1, 5, 6], true));
@@ -64,6 +64,5 @@ console.log(determinatedOddEvenCards([1, 2, 3, 1, 5, 6], true));
     console.log(counter)
   }
   
- console.log(determineOddEvenCardsForOf([1, 2, 3, 1, 5, 6], true));
-  
+console.log(determineOddEvenCardsForOf([1, 2, 3, 1, 5, 6], true));
 console.log(determineOddEvenCardsForOf([1, 2, 3, 1, 5, 6], false));

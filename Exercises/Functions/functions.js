@@ -2,6 +2,7 @@
 // In this exercise, you are going to write some more code related to preparing and cooking your brilliant lasagna from your favorite cookbook.
 // You have five tasks. The first one is related to the cooking itself, the other four are about the perfect preparation.
 
+
 // 1. Determine whether the lasagna is done
 // When you have lasagna in the oven, you want to know whether you can already take it out or not. To make sure the lasagna does not burn in the oven, you usually set a timer. But sometimes you forget about that.
 // Write a function cookingStatus with that accepts the remaining time on the timer in minutes as a parameter. The function has three possible results.

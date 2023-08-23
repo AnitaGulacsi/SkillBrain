@@ -5,6 +5,7 @@
 // To make things easier, she usually only starts with cards numbered 1 to 10, although some of the tricks may result in larger cards being created.
 
 
+
 // 1. Double every single card
 // Elyse wants to double the number of every card in the deck. This may result in higher cards than 1-10.
 
@@ -52,7 +53,6 @@ let middleTwo = (deck) => {
     twoMiddleCard.push(secondArray.shift());
 
     return twoMiddleCard;
-
 };
 
 console.log(middleTwo([1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10]));
