@@ -49,8 +49,20 @@ const timeToMixJuice = (juiceName) => {
 // If there are no remaining orders left that Dmitry needs to take care of, an empty array should be returned.
 
 const remainingOrders = (minutesLeft , orders) => {
+    let orderNotPrepared  = [];
 
-};
+    for (let i = 0; i < orders.length; i++) {
+      const timeToMix = timeToMixJuice(orders[i]);
+      if (timeToMix < minutesLeft) {
+        minutesLeft -= timeToMix;
+    } else {
+        orderNotPrepared.push(orders[i]);
+    }
+}
+
+    return orderNotPrepared;
+
+}
 
 console.log(remainingOrders(5, ['Energizer', 'All or Nothing', 'Green Garden']));
 
