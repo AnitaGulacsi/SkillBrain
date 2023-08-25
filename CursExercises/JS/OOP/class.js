@@ -9,7 +9,7 @@ class UserClass {
     getAge() {
         return this.age;
     }
-    SVGAnimateTransformElement(newName) {
+    setName(newName) {
         this.name = newName;
     }
 }
