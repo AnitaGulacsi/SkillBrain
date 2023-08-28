@@ -1,0 +1,61 @@
+.two-column {
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 10px;
+}
+
+.two-column .crew-description {
+    justify-content: space-around;
+}
+
+.two-column .crew-description .page-title h2{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    letter-spacing: 3.375px;
+    text-transform: uppercase;
+}
+
+.two-column .crew-description .page-title h2 > span {
+    padding-right: 10px;
+    font-weight: 700;
+    opacity: 0.25;
+}
+
+.two-column .crew-description .crew-details h3 {
+    font-family: 'Bellefair' , sans-serif;
+    font-size: 32px;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+
+.two-column .crew-description .crew-details h2 {
+    font-family: 'Bellefair' , sans-serif;
+    font-size: 56px;
+    text-transform: uppercase;
+}
+
+.two-column .crew-description .crew-details p {
+    color: #D0D6F9;
+    width: 444px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    line-height: 32px; /* 177.778% */
+}
+
+.two-column .crew-description .navigation-bar button{
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 100%;
+}
+
+.two-column .crew-description .navigation-bar #page1 {
+    background-color: white;
+}
+
+.two-column .crew-description .navigation-bar button:hover{
+    cursor: pointer;
+}

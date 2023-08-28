@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- font Barlow Condensed -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+       <!-- font Bellefair -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap" rel="stylesheet">
+      <!-- font Barlow -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap" rel="stylesheet">
+        <!-- styles add -->
+        <link rel="stylesheet" type="text/css" href="../styles/global.css">
+        <link rel="stylesheet" type="text/css" href="../styles/utility.css">
+        <link rel="stylesheet" type="text/css" href="../styles/responsible.css">
+        <link rel="stylesheet" type="text/css" href="../styles/destinationPage.css">
+    <title>Destination</title>
+</head>
+
+<body id="destination-page-background" class="backgrounds">
+    <header>
+        <section class="nav-bar-container row">
+            <div class="logo-container center">
+                <img src="../assets/shared/logo.svg" alt="logo">
+            </div>
+
+            <div id="horizontal-line center"></div>
+
+            <nav class="menu center d-flex row">
+                <div id="open">  
+                    <img src="../assets/shared/icon-hamburger.svg" alt="hamburger-menu">
+                </div>
+                <div id="close"> 
+                    <img src="../assets/shared/icon-close.svg" alt="close">
+                </div>
+
+                <ul class="link-container center" id="hamburger-menu">
+                    <li><a href="../htmls/home.html"><span>01</span>HOME</a></li>
+                    <li><a href="../htmls/destination.html"><span>02</span>DESTINATION</a></li>
+                    <li><a href="../htmls/crew.html"><span>03</span>CREW</a></li>
+                    <li><a href="../htmls/technology.html"><span>03</span>TECHNOLOGY</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <section class="page-title">
+        <h2><span>01</span>Pick your destination</h2>
+    </section>
+
+    <section class="two-column d-flex row" >
+        <div class="planet-container">
+            <img id="planets" src=""></img>
+        </div>
+
+        <div class="destination-container d-flex column">
+            <div id="secondary-nav-bar">
+                <ul class="d-flex row">
+                    <li id="moon">MOON</li>
+                    <li id="mars">MARS</li>
+                    <li id="europa">EUROPA</li>
+                    <li id="titan" >TITAN</li>
+                </ul>
+            </div>
+
+            <div class="name">
+                <h1 id="planet-name"></h1>
+            </div>
+
+            <div class="destination">
+                <p id="planet-description"></p>
+            </div>
+
+            <div class="more-details">
+                <div class="horizontal-line"></div>
+
+                <div class="travel-states-container d-flex row">
+                    <div class="travel-distance-time">
+                        <h5>AVG. DISTANCE</h5>
+                        <p id="distance"></p>
+                    </div>
+                   
+                    <div class="travel-distance-time">
+                        <h5>Est. travel time</h5>
+                        <p id="travel-time"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <script type="module" src="../js/apiResponse.js"></script> -->
+    <script src="../js/global.js"></script>
+    <script src="../js/destination.js"></script>
+</body>
+</html>

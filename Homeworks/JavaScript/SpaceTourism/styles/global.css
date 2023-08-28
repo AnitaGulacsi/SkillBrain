@@ -1,0 +1,45 @@
+
+/* ----------NAV-BAR-CSS-------------- */
+
+.nav-bar-container {
+  margin: 100px 0 100px 100px;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: red; */
+}
+
+/* .nav-bar-container .logo-container {
+} */
+
+/* .nav-bar-container .link-container #horizontal-line {
+  width: 700px;
+  border: 1px solid rgb(255, 8, 8);
+  opacity: 0.2;
+  z-index: 1;
+} */
+
+.nav-bar-container .menu .link-container{
+  width: 830px;
+  height: 96px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.774227142333984px);
+}
+
+.nav-bar-container .menu .link-container li {
+  list-style-type: none;
+  padding-right: 50px;
+}
+
+.nav-bar-container .menu .link-container li > a > span {
+  font-weight: 700;
+  padding-right: 10px;
+}
+
+.nav-bar-container .menu .link-container li > a {
+  text-decoration: none;
+}
+
+.nav-bar-container .menu #open , .nav-bar-container .menu #close {
+  display: none;
+}
+
