@@ -45,7 +45,6 @@
 .three-column .two-column .secondary-buttons-nav #button1 {
     color: black;
     background-color: white;
-
 }
 
 .three-column .two-column .secondary-buttons-nav button:hover {
@@ -72,3 +71,114 @@
     line-height: 32px; /* 177.778% */
 }
 
+/* for tablet */ 
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .page-title h2 {
+        margin-left: 70px;
+    }
+
+    .three-column {
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+
+
+    .three-column .two-column {
+        flex-direction: column;
+    }
+
+    .three-column .two-column .secondary-buttons-nav{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .three-column .two-column .secondary-buttons-nav button {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+    
+    .three-column .two-column .vehicle-details h3 {
+        margin-top: 25px;
+        font-size: 40px;
+    }
+
+    .three-column .two-column .vehicle-details {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        margin: 0 40px 40px 40px;
+    }
+
+    .three-column .vehicle-image img {
+        margin-top: 50px;
+        width: 768px;
+        height: 310px;     
+    }
+}
+
+/* for phone */
+@media (max-width: 767px) {
+
+    .page-title h2 {
+        margin-left: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .three-column {
+        flex-direction: column-reverse;
+        margin: 0%;
+    }
+
+    .three-column .two-column {
+        flex-direction: column;
+    }
+
+    .three-column .two-column .secondary-buttons-nav{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .three-column .two-column .secondary-buttons-nav button {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .three-column .two-column .vehicle-details {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        margin: 0 20px 50px 20px;
+
+    }
+
+    .three-column .two-column .vehicle-details p{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    
+    .three-column .two-column .vehicle-details h3 {
+        margin-top: 10px;
+        font-size: 24px;
+    }
+
+    .three-column .vehicle-image img {
+        margin-top: 20px;
+        width: 389px;
+        height: 200px;
+    }
+}

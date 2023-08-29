@@ -1,5 +1,5 @@
 .two-column {
-    margin: 200px;
+    margin: 200px 200px 30px 200px;
     justify-content: space-between;
     /* background-color: red; */
 }
@@ -13,13 +13,13 @@
 }
 
 .two-column .text-container h1 {
-    font-family: Bellefair , sans-serif;
+    font-family: 'Bellefair' , sans-serif;
     font-size: 150px;
     line-height: normal;
 }
 
 .two-column .text-container h3 {
-    font-family: Barlow Condensed , sans-serif;
+    font-family: 'Barlow Condensed' , sans-serif;
     font-size: 28px;
     line-height: normal;
     letter-spacing: 4.725px;
@@ -29,7 +29,7 @@
 .two-column .text-container p{
     width: 400px;
     line-height: 32px;
-    font-family: Barlow , sans-serif;
+    font-family: 'Barlow' , sans-serif;
 }
 
 .two-column .btn-container {
@@ -51,4 +51,71 @@
     cursor: pointer;   
     /* box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
     transition-duration: .1s; */
+}
+
+/* for tablet */ 
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .two-column {
+        flex-direction: column;
+        margin: 100px 0;
+    }
+
+    .two-column .text-container {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .two-column .text-container h1 {
+        font-size: 150px;
+    }
+    
+    .two-column .text-container h3 {
+        font-size: 20px;
+    }
+    
+    
+    .two-column .text-container p{
+        font-size: 16px;
+    }
+
+    .two-column .btn-container #main-btn {
+        width: 242px;
+        height: 242px;
+    }
+}
+
+/* for phone */
+@media (max-width: 767px) {
+
+    .two-column {
+        flex-direction: column;
+        margin: 50px 20px;
+    }
+
+    .two-column .text-container {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .two-column .text-container h1 {
+        font-size: 80px;
+    }
+    
+    .two-column .text-container h3 {
+        font-size: 16px;
+    }
+    
+    
+    .two-column .text-container p{
+        font-size: 15px;
+    }
+
+    .two-column .btn-container #main-btn {
+        width: 150px;
+        height: 150px;
+        font-size: 20px;
+    }
+
 }

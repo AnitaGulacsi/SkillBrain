@@ -1,3 +1,16 @@
+.page-title h2{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    letter-spacing: 3.375px;
+    text-transform: uppercase;
+}
+
+.page-title h2 > span {
+    padding-right: 10px;
+    font-weight: 700;
+    opacity: 0.25;
+}
+
 .two-column {
     justify-content: space-between;
     margin-left: 200px;
@@ -7,19 +20,6 @@
 
 .two-column .crew-description {
     justify-content: space-around;
-}
-
-.two-column .crew-description .page-title h2{
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 20px;
-    letter-spacing: 3.375px;
-    text-transform: uppercase;
-}
-
-.two-column .crew-description .page-title h2 > span {
-    padding-right: 10px;
-    font-weight: 700;
-    opacity: 0.25;
 }
 
 .two-column .crew-description .crew-details h3 {
@@ -43,6 +43,10 @@
     line-height: 32px; /* 177.778% */
 }
 
+.two-column .crew-description .navigation-bar{
+    margin-bottom: 40px;
+}
+
 .two-column .crew-description .navigation-bar button{
     width: 10px;
     height: 10px;
@@ -58,4 +62,125 @@
 
 .two-column .crew-description .navigation-bar button:hover{
     cursor: pointer;
+}
+
+/* for tablet */ 
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .two-column {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .page-title h2{
+        margin: 0 50px;
+    }
+
+    .two-column .crew-description .crew-details {
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .two-column .crew-description .crew-details h3 {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+    
+    .two-column .crew-description .crew-details h2 {
+        font-size: 40px;
+        margin-top: 20px;
+    }
+    
+    .two-column .crew-description .crew-details p {
+        width: 444px;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .two-column .crew-description .navigation-bar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-right: 15px;
+    }
+
+    .two-column .members-photo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .two-column .members-photo img{
+        width: 456px;
+    }
+
+}
+
+/* for phone */
+@media (max-width: 767px) {
+
+    .two-column {
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 0%;
+    }
+
+   .page-title h2{
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .two-column .crew-description .crew-details {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .two-column .crew-description .crew-details h3 {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    
+    .two-column .crew-description .crew-details h2 {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+    
+    .two-column .crew-description .crew-details p {
+        width: 347px;
+        line-height: 1.8;
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    .two-column .crew-description .navigation-bar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-right: 15px;
+    }
+
+    .two-column .members-photo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .two-column .members-photo img{
+        width: 327px;
+    }
 }
