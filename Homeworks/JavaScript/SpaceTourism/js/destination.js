@@ -37,7 +37,7 @@ async function requestDataJson() {
 
     // Only call API if there is no selected destination already (page wasn't open before)
     if (selectedDestination !== null) {
-        const url = "http://127.0.0.1:5500/Space-Tourism-Website/secret_data/data/data.json";
+        const url = "http://127.0.0.1:5500/secret_data/data/data.json";
 
         try {
             const response = await fetch(url);

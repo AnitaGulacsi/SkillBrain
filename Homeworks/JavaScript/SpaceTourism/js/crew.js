@@ -35,7 +35,7 @@ async function information() {
     // const selectedCrew =  localStorage.getItem('electedCrew');
   
     // if (selectedCrew !== null) {
-        const url = "http://127.0.0.1:5500/Space-Tourism-Website/secret_data/data/data.json";
+        const url = "http://127.0.0.1:5500/secret_data/data/data.json";
 
         try {
             const response = await fetch(url);

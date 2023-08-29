@@ -26,7 +26,7 @@ const button3 = document.getElementById("button3");
 let data = {};
 
 async function getInformation() {
-    const url = "http://127.0.0.1:5500/Space-Tourism-Website/secret_data/data/data.json";
+    const url = "http://127.0.0.1:5500/secret_data/data/data.json";
 
     try {
         const response = await fetch(url);
