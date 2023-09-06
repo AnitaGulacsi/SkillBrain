@@ -11,7 +11,7 @@
 // If the function is called without a timer value, the result should be 'You forgot to set the timer.'.
 // The timer will never show a value below 0.
 
-let cookingStatus = (timer) => {
+const cookingStatus = (timer) => {
     if (timer === 0 ) {
         console.log("Lasagna is done");
     } else if (timer >= 1) {
@@ -30,7 +30,7 @@ cookingStatus(50);
 // The function should return the estimate for the total preparation time based on the number of layers. 
 // If the function is called without providing the average preparation time, 2 minutes should be assumed instead.
 
-let preparationTime = (layers , minutes) => {
+const preparationTime = (layers , minutes) => {
     let layersNumber = layers.length;
     if (minutes >= 0 ) {
         time = layersNumber * minutes;
@@ -49,7 +49,7 @@ console.log(preparationTime(['sauce', 'noodles', 'sauce', 'meat', 'mozzarella', 
 // The function will then determine the quantity of noodles and sauce needed to make your meal. 
 // The result should be returned as an object with keys noodles and sauce.
 
-let quantities = (ingredients) => {
+const quantities = (ingredients) => {
     let sauceCount = [];
     let noodlesCount = []; 
     for (let i = 0; i < ingredients.length; i++) {
@@ -78,7 +78,7 @@ console.log(quantities(['sauce', 'noodles', 'sauce', 'meat', 'mozzarella', 'nood
 // The array that represents your recipe should be modified directly and the function should not return anything. However, 
 // the first argument should not be modified.
 
-let addSecretIngredient = (friendsList , myList) => {
+const addSecretIngredient = (friendsList , myList) => {
     if ( friendsList != myList ) {
         myList.push(friendsList.pop())
     }
@@ -97,12 +97,12 @@ console.log(addSecretIngredient(['noodles', 'sauce', 'mozzarella', 'kampot peppe
 // The function should return a recipe object with the amounts needed for the desired number of portions. You want to keep the original recipe though. 
 // This means, in this task the recipe argument should not be modified.
 
-let scaleRecipe = (recipe , portions) => {
-    // let newPortions = [];
-    //   for (let i = 0; i < recipe.length; i++) {
-    //      newPortions =  recipe * portions ;
-    //   }
-    //   return newPortions;
+const scaleRecipe = (recipe , portions) => {
+    let newPortions = [];
+      for (let i = 0; i < recipe.length; i++) {
+        newPortions = recipe * (portions / 2);
+      }
+      return newPortions;
 };
 
 console.log(scaleRecipe({noodles: 200, sauce: 0.5, mozzarella: 1, meat: 100} , 4 ));
