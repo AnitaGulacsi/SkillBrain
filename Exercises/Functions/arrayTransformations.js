@@ -84,7 +84,7 @@ console.log(sandwichTrick([1 , 2 , 3 , 5 , 6  , 10]));
 let twoIsSpecial = (deck) => {
     let justTwoNumbers = [];
     for (let i = 0; i < deck.length; i++) {
-        if (deck[i] == 2) {
+        if (deck[i] === 2) {
             justTwoNumbers.push(deck[i])
         }
     }
