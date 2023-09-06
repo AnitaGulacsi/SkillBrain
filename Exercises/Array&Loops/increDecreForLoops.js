@@ -15,7 +15,7 @@
 // Implement a function totalBirdCount that accepts an array that contains the bird count per day.
 //     It should return the total number of birds that you counted.
 
-let totalBirdCount = (birdsPerDay) => {
+const totalBirdCount = (birdsPerDay) => {
     let total = 0 
     for (let i = 0; i < birdsPerDay.length; i++) {
         total += birdsPerDay[i];
@@ -31,7 +31,7 @@ console.log("The total birds " + totalBirdCount(birdsPerDay));
 // Implement a function birdsInWeek that accepts an array of bird counts per day and a week number.
 //     It returns the total number of birds that you counted in that specific week.You can assume weeks are always tracked completely.
 
-let birdsInWeek = (birdsPerDay , weekDetails) => {
+const birdsInWeek = (birdsPerDay , weekDetails) => {
     let sumPerWeek = [];
     let weekDays = 7 
     let sum = 0;
@@ -77,7 +77,7 @@ console.log(birdsInWeek(birdsPerDay , weekDetails));
 // Given this new information, write a function fixBirdCountLog that takes an array of birds counted per day as an argument. 
 //     It should correct the counting mistake and return the modified array.
 
-let fixBirdCountLog = (birdsPerDay) => {
+const fixBirdCountLog = (birdsPerDay) => {
     let fixCountLog = [];
 
     for (let i = 0; i < birdsPerDay.length; i++) {

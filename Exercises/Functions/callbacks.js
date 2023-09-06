@@ -10,7 +10,7 @@
 // if the status is 'ONLINE', return true
 // if the status is 'OFFLINE', return false
 
-let isServiceOnline = (status) => {
+const isServiceOnline = (status) => {
     if ( status === "online" || status === "Online") {
         return true;
     } else if ( status === "offline" || status === "Offline") {
@@ -40,7 +40,7 @@ console.log(isServiceOnline());
 // If there is no error, the value is null. isAvailable is a boolean value, but if there is an error it is undefined.
 // To finish purchaseInventoryIfAvailable, throw a new error if err is not null. Otherwise, return 'PURCHASE' if isAvailable is true or 'NOOP' if false.
 
-let purchaseInventoryIfAvailable = (err , isAvailable) => {
+const purchaseInventoryIfAvailable = (err , isAvailable) => {
     if (isAvailable && err === null) {
         console.log("PURCHASE");
     } else if (!isAvailable && err === null) {

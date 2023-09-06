@@ -6,7 +6,7 @@
 // Implement the function buildSign(occasion, name) that accepts a string as the occasion parameter and a string holding someone's name as the name parameter. 
 // The two parameters will be embedded into a template string to output the message on the sign.
 
-let buildSign = (occasion , name) => (`Happy ${occasion} ${name}`) ;
+const buildSign = (occasion , name) => (`Happy ${occasion} ${name}`) ;
 
 console.log(buildSign("Birthday" , "Rob"));
 
@@ -14,7 +14,7 @@ console.log(buildSign("Birthday" , "Rob"));
 // Implement the function buildBirthdaySign(age) that accepts an age and based on the age will determine part of the message on the sign. 
 // If the age is 50 or older, the sign will include the word mature, otherwise the sign will include the word young.
 
-let buildBirthdaySign = (age) => {
+const buildBirthdaySign = (age) => {
     if ( age <= 50) {
         console.log("Happy Birthday! What a young fellow you are");
     } else {
@@ -28,7 +28,7 @@ buildBirthdaySign(45);
 // Implement the function graduationFor(name, year) which takes a name as a string parameter 
 // and a year as a number parameter and uses string interpolation to create a phrase for a sign that uses a newline to separate the two lines of the message.
 
-let graduationFor = (name , year) => ("Congratulation " + name +  "! \nClass of " + year);
+const graduationFor = (name , year) => ("Congratulation " + name +  "! \nClass of " + year);
 
 console.log(graduationFor("Hannah" , 2022));
 
@@ -38,7 +38,7 @@ console.log(graduationFor("Hannah" , 2022));
 // (Whitespaces are included in the calculation.) The phrase returned includes the cost to create the sign, 
 // written with two digits after the decimal point, followed by the currency string.
 
-let costOf = (sign , currency) => {
+const costOf = (sign , currency) => {
     let counter = sign.length;
     let totalPrice = 20 + (counter * 2) ; 
     

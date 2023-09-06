@@ -11,7 +11,7 @@
 // Implement the needsLicense(kind) function that takes the kind of vehicle and returns a
 // boolean indicating whether you need a license for that kind of vehicle.
 
-let needsLicense = (kind) => {
+const needsLicense = (kind) => {
     if (kind === "car" || kind === "truck") {
         return true;
     } else {
@@ -27,7 +27,7 @@ console.log(result);
 // making the final decision. For that implement the function chooseVehicle(option1, option2) that takes two
 // vehicles as arguments and returns a decision that includes the option that comes first in dictionary order.
 
-let chooseVehicle = (option1, option2) => {
+const chooseVehicle = (option1, option2) => {
     if (option1 < option2) {
         return option1 + "is clearly the better choice";
     } else {
@@ -50,7 +50,7 @@ console.log(result3);
 // else if and else (there are other ways but you want to practice). It takes the original price and the age of
 // the vehicle as arguments and returns the estimated price in the dealership.
 
-let calculateResellPrice = (originalPrice, age) => {
+const calculateResellPrice = (originalPrice, age) => {
     if (age < 3) {
         console.log("first")
         return originalPrice * ( 80 / 100);
