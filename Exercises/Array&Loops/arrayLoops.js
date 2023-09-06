@@ -29,7 +29,7 @@ console.log(cardTypeCheck([1, 3, 3, 4], 3));
 // This function should return a single number: the number of odd or even cards there are(depending on the value of the second argument) in the deck. 
 // To practice, use a for...of loop in the function implementation this time.
 
-const determinatedOddEvenCards = (array, boolean) => {
+const determinateOddEvenCards = (array, boolean) => {
     let evenNumbers = [];
     let oddNumbers = [];
     for (let i = 0; i < array.length; i++) {
@@ -47,7 +47,7 @@ const determinatedOddEvenCards = (array, boolean) => {
     }
 };
 
-console.log(determinatedOddEvenCards([1, 2, 3, 1, 5, 6], true));
+console.log(determinateOddEvenCards([1, 2, 3, 1, 5, 6], true));
 
  const determineOddEvenCardsForOf = (deck,booleanValue) => {
     let counter = 0;
