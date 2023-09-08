@@ -43,7 +43,7 @@ function App() {
     <div className="app-container">
       <div className="app-content">
         <h3>Task Manager</h3>
-        <TaskViewer data={data} />
+        <TaskViewer taskList={data} />
       </div>
     </div>
   );
