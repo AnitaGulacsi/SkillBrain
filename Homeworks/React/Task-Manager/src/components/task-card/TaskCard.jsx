@@ -47,7 +47,4 @@ function TaskCard(props) {
 // <p> {props.dueDate.toLocaleDateString()} </p>
 // </div>
 
-
-
-
 export default TaskCard;
