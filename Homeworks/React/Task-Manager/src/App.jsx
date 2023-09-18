@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import TaskViewer from "./components/task-viewer/TaskViewer";
 
@@ -39,11 +40,26 @@ function App() {
     },
   ]
 
+  // return React.createElement(
+  //   `div`,
+  //   {
+  //     className: "app-container"
+  //   },
+  //   React.createElement(
+  //     `div`,
+  //     {
+  //       className: "app-content"
+  //     },
+  //     React.createElement(`h3`, {}, ""),
+  //     React.createElement(TaskViewer, {taskList: data}),
+  //   )
+  // )
+
   return (
     <div className="app-container">
       <div className="app-content">
         <h3>Task Manager</h3>
-        <TaskViewer data={data} />
+        <TaskViewer taskList={data} />
       </div>
     </div>
   );
