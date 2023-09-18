@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import "./TaskCard.css";
 import Badge from "../badge/Badge";
 import DateContainer from "../date-container/DateContainer";
@@ -13,9 +14,29 @@ function TaskCard(props) {
 
   //props => object argument with data and returns a React element
 
+  const [taskId, setTaskId] = useState(props.id);  //hook => use...  //ne returneaza un array 
+  // valoare + functia cu care facem update 
+  //trebuie sa fie declarate le nivel 0 
+
+  // const handleClick = () => {
+  //   setTaskId("Clicked!");
+  //   // console.log("hello" + taskId);
+  //   // console.log("hello" + props.id);
+  // }
+
+  const [counter, setCounter ] = useState(0);
+ 
+  console.log("RENDER" + counter + props.id);
+
+  const handleClick = () => {
+    setCounter(counter + 1);
+    console.log("cnt" , counter);
+  }
+
   return (
     <div className="card-wrapper">
       <div className="card-header">
+        {/* <p className="task-id">{taskId}</p> */}
         <p className="task-id"> {props.id} </p>
         <Badge status={props.status}/>
         {/* <div className="badge">
@@ -23,9 +44,20 @@ function TaskCard(props) {
         </div> */}
       </div>
       <div className="card-content">
-        <p> {props.name} </p>
+        {/* <p> {props.name} </p> */}
+        <p>{counter}</p>
       </div>
       <div className="card-footer">
+        {/* difference between using onClick={handleClick} and onClick={handleClick()}
+     1.onClick={handleClick}:
+      It's important to note that you are passing a reference to the function, 
+      so you don't invoke it immediately. The function will only be called when the button is clicked.
+    2.onClick={handleClick()}:
+      In this case, you are invoking the handleClick function immediately and assigning its return value (if any) as the event handler for the onClick event.
+      This means that when the component renders, handleClick will be executed, and its return value will be used as the event handler. 
+      If handleClick returns a function, that returned function will be executed when the button is clicked. */}
+        {/* <button onClick={handleClick}>Click me </button> */}
+        <button onClick={handleClick}>INCREMENT</button>
         <DateContainer date = {props.dueDate}/>
         {/* <div className="due-date">
           <p>Due Date</p>

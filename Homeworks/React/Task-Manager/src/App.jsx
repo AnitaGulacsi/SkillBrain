@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import TaskViewer from "./components/task-viewer/TaskViewer";
 
@@ -38,6 +39,21 @@ function App() {
       dueDate: new Date(2012, 3, 22),
     },
   ]
+
+  // return React.createElement(
+  //   `div`,
+  //   {
+  //     className: "app-container"
+  //   },
+  //   React.createElement(
+  //     `div`,
+  //     {
+  //       className: "app-content"
+  //     },
+  //     React.createElement(`h3`, {}, ""),
+  //     React.createElement(TaskViewer, {taskList: data}),
+  //   )
+  // )
 
   return (
     <div className="app-container">
