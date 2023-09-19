@@ -4,7 +4,7 @@ import "./CreateTaskForm.css";
 const CreateTaskForm = () => {
     const [taskName, setTaskName] = useState("");
     const [dueDate, setDueDate] = useState();
-    const [taskDatails, setDeatails] = useState("");
+    const [taskDetails, setDetails] = useState(" N   NN");
 
     //putem folosi si un singur state:
     const [formData, setFormDate] = useState({
@@ -52,8 +52,8 @@ const CreateTaskForm = () => {
             dueDate: event.target.value,
         }));
 
-        // setDueDate(event.target.value);
-        // console.log(event.target.value); // aflam ce valoare are 
+        setDueDate(event.target.value);
+        console.log(event.target.value); // aflam ce valoare are 
     } 
 
 
@@ -65,8 +65,8 @@ const CreateTaskForm = () => {
             taskDetails: event.target.value,
         }));
 
-        // setDeatails(event.target.value);
-        // console.log(event.target.value); // aflam ce valoare are 
+        setDetails(event.target.value);
+        console.log(event.target.value); // aflam ce valoare are 
     } 
 
     // console.log(newTask);
@@ -93,11 +93,15 @@ const CreateTaskForm = () => {
         const newTask = {
             name: taskName,
             dueDate: dueDate,
-            taskDetails: taskDatails,
+            taskDetails: taskDetails,
             status: "to do",
         } 
 
         console.log("newTask=", newTask);
+        // dupa ce este apasat butonul de submit informatiile din form sunt stocate, dar formu se goleste
+        setTaskName("") 
+        setDueDate("")
+        setDetails("")
     };
 
 
@@ -107,7 +111,7 @@ const CreateTaskForm = () => {
           <div className="form-row">
             <label className="label-md">Task Name</label>
             <input 
-                // value={taskName}
+                value={taskName}
                 name="taskName"
                 onChange={handleNameChange} 
                 className="input-primary" 
@@ -118,7 +122,7 @@ const CreateTaskForm = () => {
           <div className="form-row">
             <label className="label-md">Due Date</label>
             <input 
-                // value={douDate}
+                value={dueDate}
                 name="dueData"
                 onChange={handleDateChange} 
                 className="input-primary" 
@@ -129,7 +133,7 @@ const CreateTaskForm = () => {
           <div className="form-row">
             <label className="label-md">Task Details</label>
             <textarea 
-                // value={taskDetails}
+                value={taskDetails}
                 name="textDetails"
                 onChange={handleDetailsChange} 
                 className="input-primary" 
