@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./CreateTaskForm.css";
 
-const CreateTaskForm = () => {
+const CreateTaskForm = (props) => {
     const [taskName, setTaskName] = useState("");
     const [dueDate, setDueDate] = useState();
-    const [taskDetails, setDetails] = useState(" N   NN");
+    const [taskDetails, setDetails] = useState("");
 
     //putem folosi si un singur state:
     const [formData, setFormDate] = useState({
@@ -83,6 +83,12 @@ const CreateTaskForm = () => {
         ));
     }; */
 
+    const resetForm = () => {
+        setTaskName("");
+        setDueDate("");
+        setDetails("");
+    }
+
     const handleSubmit = (event) => {
         event.preventDefault(); // dezactivam mini revrash-ul pe care il face form-ul default 
         // console.log("taskName=", taskName);
@@ -97,11 +103,13 @@ const CreateTaskForm = () => {
             status: "to do",
         } 
 
+        props.addNewTask(newTask);
         console.log("newTask=", newTask);
         // dupa ce este apasat butonul de submit informatiile din form sunt stocate, dar formu se goleste
-        setTaskName("") 
+        /* setTaskName("") 
         setDueDate("")
-        setDetails("")
+        setDetails("") */
+        resetForm();
     };
 
 
