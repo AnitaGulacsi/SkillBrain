@@ -14,7 +14,7 @@ function TaskCard(props) {
 
   //props => object argument with data and returns a React element
 
-  const [taskId, setTaskId] = useState(props.id);  //hook => use...  //ne returneaza un array 
+  // const [taskId, setTaskId] = useState(props.id);  //hook => use...  //ne returneaza un array 
   // valoare + functia cu care facem update 
   //trebuie sa fie declarate le nivel 0 
 
@@ -24,14 +24,14 @@ function TaskCard(props) {
   //   // console.log("hello" + props.id);
   // }
 
-  const [counter, setCounter ] = useState(0);
+  // const [counter, setCounter ] = useState(0);
  
-  console.log("RENDER" + counter + props.id);
+  // console.log("RENDER" + counter + props.id);
 
-  const handleClick = () => {
-    setCounter(counter + 1);
-    console.log("cnt" , counter);
-  }
+  // const handleClick = () => {
+  //   setCounter(counter + 1);
+  //   console.log("cnt" , counter);
+  // }
 
   return (
     <div className="card-wrapper">
@@ -44,8 +44,8 @@ function TaskCard(props) {
         </div> */}
       </div>
       <div className="card-content">
-        {/* <p> {props.name} </p> */}
-        <p>{counter}</p>
+        <p> {props.name} </p>
+        {/* <p>{counter}</p> */}
       </div>
       <div className="card-footer">
         {/* difference between using onClick={handleClick} and onClick={handleClick()}
@@ -57,7 +57,7 @@ function TaskCard(props) {
       This means that when the component renders, handleClick will be executed, and its return value will be used as the event handler. 
       If handleClick returns a function, that returned function will be executed when the button is clicked. */}
         {/* <button onClick={handleClick}>Click me </button> */}
-        <button onClick={handleClick}>INCREMENT</button>
+        {/* <button onClick={handleClick}>INCREMENT</button> */}
         <DateContainer date = {props.dueDate}/>
         {/* <div className="due-date">
           <p>Due Date</p>
