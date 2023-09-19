@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import TaskViewer from "./components/task-viewer/TaskViewer";
+import CreateTaskForm from "./components/forms/CreateTaskForm";
 
 function App() {
 
@@ -55,11 +56,37 @@ function App() {
   //   )
   // )
 
+  const [taskList, setTaskList] = useState(data);
+
+  const onNewTaskAdd = (newTask) => {
+    console.log("task from APP.js" , newTask);
+    // // din cauza id-ului si pentru un code mai clar in loc de folosirea aceasta o sa facem in urmatorul fel
+    // const taskToAdd = {
+    //   ...newTask,
+    //   dueDate: new Date(newTask.dueDate),
+    // }
+    setTaskList((prevState=> [
+      ...prevState, {
+        ...newTask,
+        dueDate: new Date(newTask.dueDate),
+        id: "T-" + prevState.length,
+      },
+    ]))
+  }
+
   return (
     <div className="app-container">
       <div className="app-content">
-        <h3>Task Manager</h3>
-        <TaskViewer taskList={data} />
+
+        <TaskViewer taskList={taskList} />
+
+        <div className="side-bar-right">
+          <div className='card-xl'>
+            <h3>Create task</h3>
+            <CreateTaskForm addNewTask={onNewTaskAdd}/>
+          </div>
+        </div>
+
       </div>
     </div>
   );
