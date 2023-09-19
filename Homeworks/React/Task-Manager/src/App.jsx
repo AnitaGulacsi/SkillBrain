@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import TaskViewer from "./components/task-viewer/TaskViewer";
+import CreateTaskForm from "./components/forms/CreateTaskForm";
 
 function App() {
 
@@ -63,8 +64,8 @@ function App() {
 
         <div className="side-bar-right">
           <div className='card-xl'>
-            
-            <div/>
+            <h3>Create task</h3>
+            <CreateTaskForm />
           </div>
         </div>
 
