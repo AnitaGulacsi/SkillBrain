@@ -58,8 +58,16 @@ function App() {
   return (
     <div className="app-container">
       <div className="app-content">
-        <h3>Task Manager</h3>
+
         <TaskViewer taskList={data} />
+
+        <div className="side-bar-right">
+          <div className='card-xl'>
+            
+            <div/>
+          </div>
+        </div>
+
       </div>
     </div>
   );

@@ -5,6 +5,10 @@
   overflow-y: scroll;
 }
 
+.task-viewer-container::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
 .task-list-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
