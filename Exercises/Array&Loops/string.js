@@ -27,7 +27,7 @@
 // So when the guard recites Stands so high, you'll respond S, when the guard recites Huge hooves too, you'll respond H.
 // Implement the function frontDoorResponse that takes a line of the poem as an argument and returns the first letter of that line.
 
-let frontDoorResponse = (sentences) => {
+const frontDoorResponse = (sentences) => {
     let newLines = sentences.split("/"); // split the in elements
     let letters = []; 
     for (let i = 0; i < newLines.length; i++) {
@@ -38,6 +38,7 @@ let frontDoorResponse = (sentences) => {
     return password;
 };
 
+
 let sentences = ("Stands so high/Huge hooves too/Impatiently waits for/Reins and harness/Eager to leave");
 console.log(frontDoorResponse(sentences));
 
@@ -47,7 +48,7 @@ console.log(frontDoorResponse(sentences));
 // Implement the function frontDoorPassword that accepts a string(the combined letters you found in task 1)
 // and returns it correctly capitalized.
 
-let frontDoorPassword = (password) => {
+const frontDoorPassword = (password) => {
     let letters = password.toLowerCase().split(""); // first i split the word , and i make all the letters lower case
     let firstLetter = letters.shift();  // i selected the first letter
 
@@ -79,7 +80,7 @@ console.log(frontDoorPassword(password));
 // Implement the function backDoorResponse that takes a line of the poem as an argument
 //     and returns the last letter of that line that is not a whitespace character.
 
-let backDoorResponse = (poemLines) => {
+const backDoorResponse = (poemLines) => {
     let words = [];
     let lastLetter = [];
     let newLine = poemLines.split("/"); // split in elements
@@ -110,7 +111,7 @@ console.log(backDoorResponse(poemLines));
 // Implement the function backDoorPassword that accepts a string(the combined letters you found in task 3)
 //     and returns the polite version of the capitalized password.
 
-let bePolite = (polite) => {
+const bePolite = (polite) => {
     let politeWord = (" , please")
     let concatenatedWords = [...polite, ...politeWord]; 
     let sentences = concatenatedWords.join("");

@@ -4,6 +4,7 @@
 // In this exercise, you're going to write some code to help Lucian cook an exquisite lasagna from his favorite cookbook.
 // You have four tasks related to the time spent cooking the lasagna.
 
+
 // 1. Define the expected oven time in minutes
 // Define the EXPECTED_MINUTES_IN_OVEN constant that represents how many minutes the lasagna should be in the oven.
 // It must be exported.According to the cooking book, the expected oven time in minutes is 40.
@@ -15,7 +16,7 @@ const EXPECTED_MINUTES_IN_OVEN = 40;
 // oven as a parameter and returns how many minutes the lasagna still has to remain in the oven, based on
 // the expected oven time in minutes from the previous task.
 
-let remainingMinutesInOven = (actualMinutesInOven) => {
+const remainingMinutesInOven = (actualMinutesInOven) => {
     return EXPECTED_MINUTES_IN_OVEN - actualMinutesInOven;
 }
 
@@ -24,7 +25,7 @@ let remainingMinutesInOven = (actualMinutesInOven) => {
 // as a parameter and returns how many minutes you spent preparing the lasagna, assuming each layer takes you
 // 2 minutes to prepare.
 
-let preparationTimeInMinutes = (numberOfLayers) => {
+const preparationTimeInMinutes = (numberOfLayers) => {
     return numberOfLayers * 2;
 }
  
@@ -35,7 +36,7 @@ let preparationTimeInMinutes = (numberOfLayers) => {
 // on cooking the lasagna, which is the sum of the preparation time in minutes, and the time in minutes the lasagna
 // has spent in the oven at the moment.
 
-let totalTimeInMinutes = (actualMinutesInOven, numberOfLayers) => {
+const totalTimeInMinutes = (actualMinutesInOven, numberOfLayers) => {
     const preparationTime = preparationTimeInMinutes(numberOfLayers);
     return preparationTime + actualMinutesInOven;
 }

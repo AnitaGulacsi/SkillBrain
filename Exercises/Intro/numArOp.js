@@ -2,6 +2,7 @@
 // In this exercise you will be writing code to help a freelancer communicate with his clients about the prices of
 // certain projects. You will write a few utility functions to quickly calculate the costs for the clients.
 
+
 // 1. Calculate the day rate given an hourly rate
 // A client contacts the freelancer to enquire about his rates. The freelancer explains that he works 8 hours a
 // day. However, the freelancer knows only his hourly rates for the project. Help him estimate a day rate given an

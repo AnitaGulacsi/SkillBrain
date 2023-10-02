@@ -4,6 +4,7 @@
 // To make things a bit easier, she only uses the cards 1 to 10.
 // In this exercise, use built-in methods to analyse the contents of an array.
 
+
 // 1. Find the position of a card
 // Elyse wants to know the position(index) of a card in the stack.
 

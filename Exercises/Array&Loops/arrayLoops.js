@@ -3,6 +3,7 @@
 // As a budding magician, Elyse needs to analyze her deck in lots of different ways. 
 // To keep things simple, she only uses cards with values 1 - 10.
 
+
 // 1. Determine how many cards of a certain type are in the deck
 // Elyse wants to know how many cards of a particular type she has in her deck.
 // Write a function cardTypeCheck that takes two parameters: an array of cards(Elyse's deck) and the type of card to count. 
@@ -28,7 +29,7 @@ console.log(cardTypeCheck([1, 3, 3, 4], 3));
 // This function should return a single number: the number of odd or even cards there are(depending on the value of the second argument) in the deck. 
 // To practice, use a for...of loop in the function implementation this time.
 
-const determinatedOddEvenCards = (array, boolean) => {
+const determinateOddEvenCards = (array, boolean) => {
     let evenNumbers = [];
     let oddNumbers = [];
     for (let i = 0; i < array.length; i++) {
@@ -44,12 +45,9 @@ const determinatedOddEvenCards = (array, boolean) => {
     } else {
         return oddNumbers.length;
     }
-
 };
 
-console.log(determinatedOddEvenCards([1, 2, 3, 1, 5, 6], true));
-
-//question ? how can i solve with for...of ? 
+console.log(determinateOddEvenCards([1, 2, 3, 1, 5, 6], true));
 
  const determineOddEvenCardsForOf = (deck,booleanValue) => {
     let counter = 0;
@@ -64,6 +62,5 @@ console.log(determinatedOddEvenCards([1, 2, 3, 1, 5, 6], true));
     console.log(counter)
   }
   
- console.log(determineOddEvenCardsForOf([1, 2, 3, 1, 5, 6], true));
-  
+console.log(determineOddEvenCardsForOf([1, 2, 3, 1, 5, 6], true));
 console.log(determineOddEvenCardsForOf([1, 2, 3, 1, 5, 6], false));

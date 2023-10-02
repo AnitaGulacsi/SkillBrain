@@ -5,6 +5,7 @@
 // function for revoking a ticket. In tasks 3 and 4, you will work on the ticket tracking system that helps to prevent forgery. 
 // Lastly, you will help adapt the system to new legal requirements.
 
+
 // 1. Create a new visitor
 // When visitors come to the amusement park for the first time, they need to register by entering their name and age 
 //in a terminal and agreeing to the terms and conditions. Of course, they also need to buy a ticket. Each ticket has an identifier like H32AZ123.
@@ -14,7 +15,7 @@
 // The identifier of the ticket that the visitor bought.
 // The function should return an object that holds this information. The keys in the object should be called name, age and ticketId.
 
-let createVisitor = (nameV, ageV , ticketIdV) => ({name : nameV , age : ageV , ticketId : ticketIdV });
+const createVisitor = (nameV, ageV , ticketIdV) => ({name : nameV , age : ageV , ticketId : ticketIdV });
 
 console.log(createVisitor('Verena Nardi', 45, 'H32AZ123'));
 
@@ -26,10 +27,11 @@ console.log(createVisitor('Verena Nardi', 45, 'H32AZ123'));
 // of the visitor object should stay the same. Implement the function revokeTicket that accepts a visitor object, 
 // sets the ticket identifier to null and returns the object afterwards.
 
-let revokeTicket = (visitor) => {
+const revokeTicket = (visitor) => {
     visitor.ticketId = null ; 
     return visitor;
 };
+
 
 const visitor = {
     name: 'Verena Nardi',
@@ -50,7 +52,7 @@ console.log(revokeTicket(visitor));
 // 'not sold' in case the ticket was printed but not sold
 // 'sold to {name}' where {name} is the name of the visitor if the ticket was sold
 
-let ticketStatus = (ticket , ticketId) => {
+const ticketStatus = (ticket , ticketId) => {
     if (ticket[ticketId] === null) {
         console.log("Not sold");
       } else if (ticket[ticketId]) {
@@ -70,7 +72,7 @@ ticketStatus({'0H2AZ123': null, '23LA9T41': 'Verena Nardi'} , "23LA941");
 // the name of the visitor if the ticket was sold
 // 'invalid ticket !!!' if the ticket was not sold yet or the identifier was not found in the tracking object
 
-let simpleTicketStatus = (ticket , ticketId) => {
+const simpleTicketStatus = (ticket , ticketId) => {
     if ( ticket[ticketId]) {
         console.log(ticket[ticketId]);
     }else {
@@ -87,6 +89,6 @@ simpleTicketStatus({'0H2AZ123': null, '23LA9T41': 'Verena Nardi'}, '0H2AZ123');
 // For this, implement a function gtcVersion that accepts a visitor object as an argument and returns the GTC version if it is available. 
 // If the version information is not available, nothing should be returned.
 
-let gtcVersion = (visitor) => visitor.gtc.version;
+const gtcVersion = (visitor) => visitor.gtc.version;
 
 console.log(gtcVersion({name: 'Verena Nardi', age: 45, ticketId: 'H32AZ123', gtc: {signed: true ,  version: '2.1'}}))
