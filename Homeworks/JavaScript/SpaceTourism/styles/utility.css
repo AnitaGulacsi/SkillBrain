@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    color: #fff;
+  }
+  
+  /* html, body {
+    height: 100%;
+    width: 100%;
+  } */
+
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p{
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .d-flex {
+    display: flex;
+  }
+  
+  .row {
+    flex-direction: row;
+  }
+  
+  .column {
+    flex-direction: column;
+  }
+  
+  .backgrounds{ 
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
