@@ -9,7 +9,6 @@ const Modal = (props) => {
     e.stopPropagation();
     setIsOpen(false);
     if (props.onClose) {
-      // If we closed the modal and the parent gave a callback function as prop, we call that function
       props.onClose();
     }
   };
